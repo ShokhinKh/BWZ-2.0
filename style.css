@@ -2413,6 +2413,36 @@ ___________________________________*/
   margin-left: 180px;
 }
 
+  .login_inner {
+    padding: 30px 25px 25px 25px;
+    margin-bottom: 20px;
+}
+
+.log_btn {
+  font-size: 12px;
+}
+
+.log_text{
+  font-size: 12px;
+}
+
+.registration_inner {
+  padding: 30px 25px 25px 25px;
+  margin-bottom: 20px;
+}
+
+.reg_btn{
+  font-size: 12px;
+}
+
+.reg_text{
+  font-size: 12px;
+}
+
+.if_login {
+  font-size: 12px;
+}
+
 }
 
 
