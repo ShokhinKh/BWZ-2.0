@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <title>login</title>
+</head>
+<body>
+    <div class="login">
+        <div class="login_inner">
+            <div class="login_title">Вход</div>
+            <form action="" class="log_form">
+
+
+                <p class="log_text">Имя пользователя или email</p>
+                <input type="text" class="reg_input" name="last_name" id="surname">
+
+                <div class="password">
+                    <p class="log_text">Пароль</p>
+                    <input type="password" class="log_input" id="first-password">
+                    <button type="button" class="password_btn" data-target="#first-password">
+                        <img  src="image/eye.png" alt="" class="eye">
+                    </button>
+                </div>
+
+
+                <div class="forget">
+                    <a href="#" class="forget_link">Забыли пароль?</a>
+                </div>
+                <div class="remember">
+                    <input type="checkbox"><label class="remember_text">Запомнить меня</label>
+                </div>
+                <button type="submit" class="log_btn">Вход</button>
+            </form>
+            <div class="if_reg">Еще  нет учетной записи? <a href="registration.html" class="if_login-link">Регистрация</a></div>
+            <div class="login_with">
+                <div class="login_with-text">Войти с помощью</div>
+                <a href="#" class="login_with-link">
+                    <img class="login_with-icon" src="image/LeaderID.png" alt="">
+                </a>
+                <a href="#" class="login_with-link">
+                    <img class="login_with-icon" src="image/vk.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="JavaScript/eye.js"></script>
+</body>
+</html>

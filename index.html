@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <title>main</title>
+</head>
+<body>
+
+<!------------
+------------------------МЕНЮ------------------------
+--------------------------------------------------------------------->
+
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="burger">
+                    <span></span>
+                 </div>
+                <ul class="header-menu">
+                    <a href="#" class="menu-link" onclick="scrollToZones(event); return false;">Зоны коворкинга</a>
+                    <a class="menu-link" href="#" onclick="scrollToBooking(event); return false;">бронирование</a>
+                    <a class="menu-link" href="#" onclick="scrollToEvents(event); return false;">мероприятия</a>
+                    <a class="menu-link" href="#" onclick="scrollToReviews(event); return false;">отзывы</a>
+                </ul>
+    
+    
+    
+                <!-- Если пользователь не зареган -->
+                <div class="menu-btn">
+                    <a href="registration.html" class="menu-reg">Регистрация</a>
+                    <a href="login.html" class="menu-login">вход</a>
+                </div>
+    
+
+                <!-- Если зареган -->
+                <!-- <div class="menu-ava">
+                    <a href="perslAccaunt.html">
+                        <img src="image/Шохин.jpg" alt="" class="menu-ava-img">
+                    </a>
+                
+                </div> -->
+
+
+            </div>
+        </div>
+    </header>
+    
+    <div class="main">
+    
+        <!------------
+    ------------------------ГЛАВНЫЙ ЭКРАН------------------------
+    --------------------------------------------------------------------->
+        <section class="intro">
+            <div class="intro_back">
+                <div class="container">
+                    <div class="intro_info">
+                        <div class="intro_title _anim-items _anim-no-hide">Создаем<br><span class="intro_info_2row">идеи</span><br><span class="intro_info_3row">вместе</span></div>
+                        <div class="intro-info_vector">
+                            <div class="intro_pred">ХОЧУ НАЙТИ КРУТОЕ МЕСТО ДЛЯ ЗАНЯТИЙ</div>
+                            <img class="intro-vector" src="image/intro-vector.svg" alt="">
+                        </div>
+                        <div class="info_btn  _anim-items _anim-no-hide">
+                            <a href="#" class="info_btn-link" href="#" onclick="scrollToBooking(event); return false;">Забронировать</a>
+                        </div>
+                        <div class="intro_block">
+                            <div class="intro_block-text">Места для<br>реализации<br>ваших идей
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    <!------------
+    ------------------------ЗОНЫ------------------------
+    --------------------------------------------------------------------->
+        <section class="zones" id="zones">
+            <div class="container">
+                <div class="title-block zones_title _anim-items _anim-no-hide">Зоны<br><span class="zones_title_2row">коворкинга</span></div>
+                <div class="zones_info">
+                    <div class="zone_vector">
+                        <img class="zone_vector_img" src="image/zone-vector.svg" alt="">
+                    </div>
+                    <ul class="zones_links">
+                        <a href="#!" data-tab="tab-1" class="zones_link-item _anim-items _anim-no-hide">ЗАЛ “ГРУППОВЫХ РАБОТ”</a>
+                        <a href="#!" data-tab="tab-2" class="zones_link-item _anim-items _anim-no-hide">ЗАЛ “коворкинг”</a>
+                        <a href="#!" data-tab="tab-3" class="zones_link-item _anim-items _anim-no-hide">ЗАЛ “лекториум”</a>
+                        <a href="#!" data-tab="tab-4" class="zones_link-item _anim-items _anim-no-hide">коворкинг уникит</a>
+                        <a href="#!" data-tab="tab-5" class="zones_link-item _anim-items _anim-no-hide">коворкинг библиотека</a>
+                    </ul>
+    
+                    <div class="zones_halls ">
+                        <div id="tab-1" class="zones_wrapper hidden">
+                            <div class="halls_img">
+                                <img class="halls_img-inner" src="image/zone1.jpg" alt="">
+                            </div>
+                            <div class="halls_info">
+                                <div class="halls_title">«Зал групповых работ»</div>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Расположение:</span> опенспейсе Научной библиотеки СурГУ <br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Тип мероприятий:</span> мероприятия в группе, стратегической или проектировочной сессии, лекторийный формат<br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Вместимость:</span> до 30 человек (формат групповых работ), до 60 человек (лекторийный формат) <br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Оснащение:</span> 1 TV, ноутбук, HDMI-проводник, HD-камера, презентер, флипчарты <br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Правила:</span> бесплатные мероприятия (для организаторов и для участников), без политики, религии и рекламы, обязательна регистрация мероприятия и участников на платформе</p>
+                                    <div class="zone_btn">
+                                        <a href="#" class="zone_btn-link" href="#" onclick="scrollToBooking(event); return false;">Забронировать</a>
+                                    </div>
+                            </div>
+                        </div>
+    
+                        <div id="tab-2" class="zones_wrapper hidden">
+                            <div class="halls_img">
+                                <img class="halls_img-inner" src="image/zone2.jpg" alt="">
+                            </div>
+                            <div class="halls_info">
+                                <div class="halls_title">«Коворкинг»</div>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Расположение:</span> опенспейсе Научной библиотеки СурГУ <br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Тип мероприятий:</span> идеально подойдет под групповую работу<br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Вместимость:</span> до 20 человек (зеленая зона), до 20 человек (синяя зона)<br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Оснащение:</span> 1 TV, ноутбук, HDMI-проводник, HD-камера, презентер, флипчарты <br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Правила:</span> бесплатные мероприятия (для организаторов и для участников), без политики, религии и рекламы, обязательна регистрации мероприятия и участников на платформе.</p>
+                                    <div class="zone_btn">
+                                        <a href="#" class="zone_btn-link" href="#" onclick="scrollToBooking(event); return false;">Забронировать</a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="zones_wrapper hidden">
+                            <div class="halls_img">
+                                <img class="halls_img-inner" src="image/zone3.jpg" alt="">
+                            </div>
+                            <div class="halls_info">
+                                <div class="halls_title">«Зал Лекториум»</div>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Расположение:</span> опенспейсе Научной библиотеки СурГУ <br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Тип мероприятий:</span> идеально подойдет для обучающего или презентационного мероприятия в лекторийном формате, может быть трансформирован под групповую работу.<br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Вместимость:</span> до 100 человек (комфортно до 60)<br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Оснащение:</span> 2 TV, стационарный компьютер, ноутбук, HDMI-проводники, HD-камера, колонка, микшер, микрофонная система, презентер, флипчарты. <br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Правила:</span> бесплатные мероприятия (для организаторов и для участников), без политики, религии и рекламы, обязательна регистрация мероприятия и участников на платформе</p>
+                                    <div class="zone_btn">
+                                        <a href="#" class="zone_btn-link" href="#" onclick="scrollToBooking(event); return false;">Забронировать</a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="zones_wrapper hidden">
+                            <div class="halls_img">
+                                <img class="halls_img-inner" src="image/zone4.jpg" alt="">
+                            </div>
+                            <div class="halls_info">
+                                <div class="halls_title">Коворкинг «УНИКИТ»</div>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Расположение:</span> Зона еще в реализации. Как только коворкинг «УНИКИТ» откроется, вся информация появится тут <br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Тип мероприятий:</span> Зона еще в реализации. Как только коворкинг «УНИКИТ» откроется, вся информация появится тут<br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Вместимость:</span> Зона еще в реализации. Как только коворкинг «УНИКИТ» откроется, вся информация появится тут <br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Оснащение:</span> Зона еще в реализации. Как только коворкинг «УНИКИТ» откроется, вся информация появится тут <br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Правила:</span> Зона еще в реализации. Как только коворкинг «УНИКИТ» откроется, вся информация появится тут</p>
+                                    <div class="zone_btn">
+                                        <a href="#" class="zone_btn-link" href="#" onclick="scrollToBooking(event); return false;">Забронировать</a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="zones_wrapper hidden">
+                            <div class="halls_img">
+                                <img class="halls_img-inner" src="image/zone5.jpg" alt="">
+                            </div>
+                            <div class="halls_info">
+                                <div class="halls_title">Коворкинг «Библиотека»</div>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Расположение:</span> Нет определенной информации <br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Тип мероприятий:</span> Нет определенной информации<br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Вместимость:</span> Нет определенной информации<br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Оснащение:</span> Нет определенной информации<br></p>
+                                    <p class="halls_text"><span style="font-weight: 500;" class="bold">Правила:</span> бесплатные мероприятия (для организаторов и для участников), без политики, религии и рекламы, обязательна регистрация мероприятия и участников на платформе</p>
+                                    <div class="zone_btn">
+                                        <a href="#" class="zone_btn-link" href="#" onclick="scrollToBooking(event); return false;">Забронировать</a>
+                                    </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <section class="book" id="book">
+            <div class="container">
+                <div class="title-block book_title _anim-items _anim-no-hide">Реализуй<br><span class="book_title_2row">свои идеи</span></div>
+                
+                    <div class="booking">
+                        
+                        <ul class="booking_links">
+                            <a href="#!" data-tab="tab-6" class="book_link-item _anim-items _anim-no-hide">КОРАБЛЬ</a>
+                            <a href="#!" data-tab="tab-7" class="book_link-item _anim-items _anim-no-hide">УНИКИТ</a>
+                        </ul>
+    
+    
+                        <div id="tab-6" class="booking-item hidden"> 
+                            <form class="booking_form" action="#">
+                                <label for="booking_zal" class="booking_text">Выбор зала:</label>
+                                <select class="booking_line booking_univer" name="type" id="booking_zal">
+                                    <option selected value="grup">«Зал групповых работ»</option>
+                                    <option value="lect">«Зал Лекториум»</option>
+                                    <option value="kowork">«Коворкинг»</option>
+                                </select>
+                                <label for="bookin_type" class="booking_text">Тип мероприятия:</label>
+                                <select class="booking_line bookin_type" name="" id="bookin_type">
+                                    <option value="lection">Лекции</option>
+                                    <option value="konfirence">Конференции</option>
+                                    <option selected value="local_meet">Личные мероприятия</option>
+                                    <option value="meet_club">Встречи клубов</option>
+                                    <option value="master_classes">Мастер-классы</option>
+                                </select>
+    
+                                <label for="data-time" class="booking_text">Дата и время мероприятия:</label>
+                                <input class="booking_line bookin_time" type="datetime-local" id="date-time" name="time"/>
+    
+                                <label for="time" class="booking_text">Длительность мероприятия:</label>
+                                <select class="booking_line booking_univer" name="type" id="time">
+                                    <option selected value="one">1 час</option>
+                                    <option value="two">2 часа</option>
+                                    <option value="three">3 часа</option>
+                                    <option value="four">4 часа</option>
+                                    <option value="five">5 часов</option>
+                                    <option value="all-day">Весь день</option>
+                                </select>
+                        
+                                
+                                <label for="name-book" class="booking_text">Название мероприятия:</label>
+                                <input type="text" value="Одиночное мероприятие" class="booking_line bookin_name" id="name-book">
+    
+                                <label for="opis-book" class="booking_text">Описание мероприятия:</label>
+                                <input type="text" value="Одиночная работа" class="booking_line bookin_opis" id="opis-book">
+    
+                                
+          
+                                <button type="button" class="booking_btn" id="form-btn">Забронировать</button>
+                            </form>
+
+                            <!-- <div class="modal-book" id="form-modal">
+                                <div class="modal-book-item">
+                                    <div class="modal-book-title">Внимание!</div>
+                                    <div class="modal-book-text">Для начала вас необходимо зарегистрироваться!</div>
+                                    <button class="modal-book-btn" id="modal-book-close">
+                                        ok
+                                    </button>
+                                </div>
+                            </div> -->
+
+                            <div class="modal-book" id="form-modal">
+                                <div class="modal-book-item">
+                                    <div class="modal-book-title">Ура!</div>
+                                    <div class="modal-book-text">Ваше бронирование прошло успешно!</div>
+                                    <button class="modal-book-btn" id="modal-book-close">
+                                        ok
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>  
+
+                        
+
+
+                        
+    
+                        <div id="tab-7" class="booking-item hidden"> 
+                            <h1>Скоро</h1>
+                        </div>
+                    </div>
+    
+    
+                
+    
+    
+            </div>
+        </section>
+    
+        <section class="events" id="events">
+            <div class="container">
+                <div class="title-block events_title _anim-items _anim-no-hide">Обязательно<br><span class="events_title_2row">посетить</span></div>
+    
+                <div class="slides">
+                    <div class="slide_item _anim-items _anim-no-hide">
+                        <img src="image/patty.jpg" alt="" class="slide_img">
+                        <div class="slide-info">
+                            <div class="slide-title">ВЕЧЕР ВСТРЕЧИ ВЫПУСНИКОВ</div>
+                            <div class="slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae provident hic nostrum molestiae, illum animi, reprehenderit iste dignissimos laboriosam quam esse voluptates laudantium eos quisquam temporibus omnis mollitia voluptatem eaque.</div>
+                            <div class="slide-link-btn">
+                                <a href="" class="slide-link">Подробнее</a>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item _anim-items _anim-no-hide">
+                        <img src="image/trening.jpg" alt="" class="slide_img">
+                        <div class="slide-info">
+                            <div class="slide-title">бизнес-тренинг</div>
+                            <div class="slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae provident hic nostrum molestiae, illum animi, reprehenderit iste dignissimos laboriosam quam esse voluptates laudantium eos quisquam temporibus omnis mollitia voluptatem eaque.</div>
+                            <div class="slide-link-btn">
+                                <a href="" class="slide-link">Подробнее</a>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item _anim-items _anim-no-hide">
+                        <img src="image/trening.jpg" alt="" class="slide_img">
+                        <div class="slide-info">
+                            <div class="slide-title">бизнес-тренинг</div>
+                            <div class="slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae provident hic nostrum molestiae, illum animi, reprehenderit iste dignissimos laboriosam quam esse voluptates laudantium eos quisquam temporibus omnis mollitia voluptatem eaque.</div>
+                            <div class="slide-link-btn">
+                                <a href="" class="slide-link">Подробнее</a>
+    
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+    
+                <a href="#!" class="show-more">
+                    <div class="arrow-8"></div>
+                </a>
+    
+    
+            </div>
+        </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    <!------------
+    ------------------------ОТЗЫВЫ------------------------
+    --------------------------------------------------------------------->
+        <section class="reviews" id="reviews">
+            <div class="reviews_back">
+                <div class="container">
+                    <div class="title-block reviews_title _anim-items _anim-no-hide">Посетители <br><span class="reviews_title_2">о нас</span></div>
+                    <div class="reviews-inner">
+    
+                        <div class="reviews_info reviews_info-active">
+                            <div class="reviews_item">
+                                <p class="zap1">,,</p>
+                                <img src="image/Шохин.jpg" alt="" class="ava">
+                                <div class="reviews_name">Хайитов <br>Шохин </div>
+                                <div class="reviews_text">Я в восторге от зоны коворкинга! Удобное расположение, отличная атмосфера, идеальные условия для работы. Рекомендую всем!</div>
+                                <p class="zap2">,,</p>
+                            </div>
+                            <div class="reviews_item">
+                                <p class="zap1">,,</p>
+                                <img src="image/Ольга.jpg" alt="" class="ava">
+                                <div class="reviews_name">Хохлова <br>Ольга </div>
+                                <div class="reviews_text">Я в восторге от зоны коворкинга! Удобное расположение, отличная атмосфера, идеальные условия для работы. Рекомендую всем!</div>
+                                <p class="zap2">,,</p>
+                            </div>
+                        </div>
+                        <div class="reviews_info">
+                            <div class="reviews_item">
+                                <p class="zap1">,,</p>
+                                <img src="image/Марк.jpg" alt="" class="ava">
+                                <div class="reviews_name">Плескач <br>Марк </div>
+                                <div class="reviews_text">Я в восторге от зоны коворкинга! Удобное расположение, отличная атмосфера, идеальные условия для работы. Рекомендую всем!</div>
+                                <p class="zap2">,,</p>
+                            </div>
+                            <div class="reviews_item">
+                                <p class="zap1">,,</p>
+                                <img src="image/Артем.jpg" alt="" class="ava">
+                                <div class="reviews_name">Карачихин <br>Артём </div>
+                                <div class="reviews_text">Я в восторге от зоны коворкинга! Удобное расположение, отличная атмосфера, идеальные условия для работы. Рекомендую всем!</div>
+                                <p class="zap2">,,</p>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="reviews-slider_btn">
+                            <div class="reviews-slider_btn_item">
+                                <a href="#!" class="slider_btn" onclick="showPrevSlide()">
+                                    <img class="slider_btn_img" src="image/left.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="reviews-slider_btn_item">
+                                <a href="#!" class="slider_btn" onclick="showNextSlide()">
+                                    <img class="slider_btn_img" src="image/right.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="reviews_btn">
+                        <a href="#!" class="reviews_link" data-path="one">
+                            Оставить отзыв
+                        </a>
+                    </div>
+                    <div class="modals_rewies" data-target="one">
+                        <div class="modal-overlay">
+    
+                            <!-- ПРИ УСЛОВИИ ЧТО ПОЛЬЗОВАТЕЛЬ ЗАРЕГАН -->
+                            <div class="modal-add">
+                                <div class="modal-add-title" >
+                                    Оставить отзыв 
+                                </div>
+                                <div class="modal-person-info">
+                                    <div class="modal-person-info-img">
+                                        <img src="image/Шохин.jpg" alt="" class="modal-person-info-img-ava">
+                                    </div>
+                                    <div class="modal-person-info-name">Хайитов Шохин</div>
+                                </div>
+                                <form class="modal-person-info-form" action="#">
+                                    <textarea class="modal-person-info-form-input" rows="7" cols="40" placeholder="Введите ваш отзыв тут"></textarea>
+                                    <div class="modal-person-info-form-btn">
+                                        <button type="button" class="modal-person-info-form-link">
+                                            Оставить отзыв
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- ПРИ УСЛОВИИ ЧТО ПОЛЬЗОВАТЕЛЬ НЕ ЗАРЕГАН -->
+                            <!-- <div class="modal-add2" style="border: rgb(97, 97, 97) 3px solid;">
+                                <div class="modal-add-title2" >
+                                    Ошибка!
+                                </div>
+                                <p>Вам необоходимо зарегестрироваться</p>
+                                <button type="button" class="modal-person-info-form-link2">
+                                    ОК
+                                </button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_innner">
+                <div class="footer-map">
+                    <div class="footer_text"><span>Мы</span> на карте</div>
+                    <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3fc0f1e475223d85717777ca416419a26578c085af052bb9d0ba3712715f47aa&amp;source=constructor"  frameborder="0"></iframe>
+                </div>
+                <div class="footer-info">
+                    <div class="footer_links">
+                        <div class="footer_text"><span>Инф</span>ормация</div>
+                        <ul class="footer-nuv">
+                            <a href="#" onclick="scrollToZones(event); return false;" class="footer-link">Зоны коворкинга</a>
+                            <a href="#" onclick="scrollToBooking(event); return false;" class="footer-link">Бронирование</a>
+                            <a href="#" onclick="scrollToEvents(event); return false;" class="footer-link">Мероприятия</a>
+                            <a href="#" onclick="scrollToReviews(event); return false;" class="footer-link">Отзывы</a>
+                        </ul>
+                    </div>
+                    <div class="foooter_contacts">
+                        <div class="footer_text"><span>Кон</span>такты</div>
+                        <ul class="contact-links">
+                            <a href="" class="contact-link">
+                                <img src="image/1.svg" alt="">
+                            </a>
+                            <a href="" class="contact-link">
+                                <img src="image/2.svg" alt="">
+                            </a>
+                            <a href="" class="contact-link">
+                                <img src="image/3.svg" alt="">
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>  
+</div>
+
+
+    <script src="JavaScript/modal.js"></script>
+    <script src="JavaScript/tabs.js"></script>
+    <script src="JavaScript/scroll.js"></script>
+    <script src="JavaScript/slider.js"></script>
+    <script src="JavaScript/TabsINbook.js"></script>
+    <script src="JavaScript/burger.js"></script>
+    <script src="JavaScript/show-more.js"></script>
+    <script src="JavaScript/book-modal.js"></script>
+    <script src="JavaScript/animation.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <title>registration</title>
+</head>
+<body>
+    <div class="registration">
+        <div class="registration_inner">
+            <div class="registration_title">Регистрация</div>
+            <form action="" class="reg_form">
+                <p class="reg_text">Фамилия</p>
+                <input type="text" class="reg_input" name="last_name" id="surname">
+                <p class="reg_text">Имя</p>
+                <input type="text" class="reg_input" name="name" id="name">
+                <p class="reg_text">Отчество</p>
+                <input type="text" class="reg_input" name="last_name" id="surname">
+                <p class="reg_text">Номер телефона(+7)</p>
+                <input type="tel" class="reg_input" name="phone" id="tel">
+                <p class="reg_text">Email</p>
+                <input type="email" class="reg_input" name="email" id="email">
+                <div class="password">
+                    <p class="reg_text">Придумайте пароль</p>
+                    <input type="password" class="reg_input" id="second-password">
+                    <button type="button" class="password_btn" data-target="#second-password">
+                        <img src="image/eye.png" alt="" class="eye">
+                    </button>
+                </div>
+                <div class="password">
+                    <p class="reg_text">Повторите пароль</p>
+                    <input type="password" class="reg_input" id="third-password">
+                    <button type="button" class="password_btn" data-target="#third-password">
+                        <img src="image/eye.png" alt="" class="eye">
+                    </button>
+                </div>
+                <button type="submit" class="reg_btn">Зарегестрироваться</button>
+            </form>
+            <div class="if_login">Есть аккаунт? <a href="login.html" class="if_login-link">Вход</a></div>
+        </div>
+    </div>
+    <script src="JavaScript/eye.js"></script>
+</body>
+</html>
