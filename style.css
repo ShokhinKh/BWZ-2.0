@@ -2454,6 +2454,17 @@ ___________________________________*/
   font-size: 12px;
 }
 
+  .modal-add {
+  max-width: 300px;
+}
+
+.modal-person-info-form-input {
+  border: #F5AE25 2px solid;
+  font-size: 15px;
+  padding: 15px;
+  max-width: 250px;
+}
+
 }
 
 
