@@ -1078,6 +1078,11 @@ ___________________________________*/
   border: 2px #4b4b4b solid;
   font-size: 14px;
   padding: 0 14px ;
+
+}
+
+.select_zvanie {
+  width: 281px;
 }
 
 .reg_btn{
