@@ -146,9 +146,9 @@ ___________________________________*/
   z-index: 100000;
   border: 1px solid #a4a4a4;
 }
-.vipadashka:hover {
+/* .vipadashka:hover {
   display: block;
-}
+} */
 
 .active-vsplivashka{
   display: block;
@@ -177,10 +177,10 @@ ___________________________________*/
 }
 
 
-.menu-ava li:hover > ul{
+/* .menu-ava li:hover > ul{
   display: initial;
 }
-
+ */
 
 .menu-ava-img {
   width: 45px;
@@ -1128,6 +1128,11 @@ ___________________________________*/
   color: #4b4b4b;
   font-weight: 300;
 }
+
+.reg_text span{
+  color: red;
+}
+
 
 .reg_input{
   width: 250px;
