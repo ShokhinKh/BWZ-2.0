@@ -28,6 +28,10 @@ body {
   h6 {
     margin: 0;
   }
+
+ul {
+    list-style-type: none;
+  }
   
   p {
     margin: 0 0 10px 0;
