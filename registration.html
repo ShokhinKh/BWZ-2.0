@@ -14,38 +14,32 @@
         <div class="registration_inner">
             <div class="registration_title">Регистрация</div>
             <form action="" class="reg_form">
-                <p class="reg_text">Фамилия</p>
+                <p title="Обязательное поле" class="reg_text">Фамилия<span>*</span></p>
                 <input type="text" class="reg_input" name="last_name" id="surname">
-                <p class="reg_text">Имя</p>
+                <p title="Обязательное поле" class="reg_text">Имя<span>*</span></p>
                 <input type="text" class="reg_input" name="name" id="name">
                 <p class="reg_text">Отчество</p>
                 <input type="text" class="reg_input" name="last_name" id="surname">
-
-
-<!-- Артеееем, вот тут изменение  -->
-                <p class="reg_text">Ваша должность</p>
+                <p title="Обязательное поле" class="reg_text">Ваша должность<span>*</span></p>
                 <select class="reg_input select_zvanie" name="" id="">
                     <option value="prepod">Преподаватель</option>
                     <option value="shcoolnik">Школьник</option>
                     <option selected value="students">Студент</option>
                 </select>
-
-
-
-                
-                <p class="reg_text">Номер телефона(+7)</p>
+                <p  class="reg_text">Номер телефона(+7)</p>
                 <input type="tel" class="reg_input" name="phone" id="tel">
-                <p class="reg_text">Email</p>
+
+                <p title="Обязательное поле" class="reg_text">Email<span>*</span></p>
                 <input type="email" class="reg_input" name="email" id="email">
                 <div class="password">
-                    <p class="reg_text">Придумайте пароль</p>
-                    <input type="password" class="reg_input" id="second-password">
+                    <p title="Обязательное поле" class="reg_text">Придумайте пароль<span>*</span></p>
+                    <input  type="password" class="reg_input" id="second-password">
                     <button type="button" class="password_btn" data-target="#second-password">
                         <img src="image/eye.png" alt="" class="eye">
                     </button>
                 </div>
-                <div class="password">
-                    <p class="reg_text">Повторите пароль</p>
+                <div  class="password">
+                    <p title="Обязательное поле" class="reg_text">Повторите пароль<span>*</span></p>
                     <input type="password" class="reg_input" id="third-password">
                     <button type="button" class="password_btn" data-target="#third-password">
                         <img src="image/eye.png" alt="" class="eye">
@@ -53,6 +47,7 @@
                 </div>
                 <button type="submit" class="reg_btn">Зарегестрироваться</button>
             </form>
+
             <div class="if_login">Есть аккаунт? <a href="login.html" class="if_login-link">Вход</a></div>
         </div>
     </div>
