@@ -137,46 +137,49 @@ ___________________________________*/
 
 .vipadashka {
   position: absolute;
-  left: -180px;
-  top: 50px;
+  left: -160px;
+  top: 55px;
   background-color: #fff;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-top: 10px;
-  border-radius: 0 0 20px 20px;
+  border-radius: 15px;
   text-transform: uppercase;
   display: none;
   z-index: 100000;
-
+  border: 1px solid #a4a4a4;
 }
 .vipadashka:hover {
   display: block;
 }
 
-
+.active-vsplivashka{
+  display: block;
+}
 
 .vipadashka-link1{
   text-decoration: none;
-  color: #000000;
+  color: #363636;
   margin-bottom: 20px;
 
 }
 .vipadashka-link2{
-  color: red;
+  color: #363636;
   text-decoration: none;
 }
 
 .vnutri-vipadashki {
+  margin-left: -40px;
   margin-top: 15px;
-  border-bottom: 1px solid #c9c9c9;
+  padding: 0px 20px;
+}
+
+.vnutri-vipadashki:last-child {
+  border-top: 1px solid #a4a4a4;
+  padding: 12px 20px;
 }
 
 
 .menu-ava li:hover > ul{
   display: initial;
 }
-
-
 
 
 .menu-ava-img {
