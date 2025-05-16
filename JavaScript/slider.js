@@ -1,35 +1,42 @@
-// Получение всех слайдов
-const reviewsSlides = document.querySelectorAll(".reviews_info");
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.getElementById('reviews_info');
+    const items = document.querySelectorAll('.reviews_item');
+    const prevBtn = document.querySelector('.reviews-prev');
+    const nextBtn = document.querySelector('.reviews-next');
+    let currentIndex = 0;
+    let itemsToShow = window.innerWidth < 1150 ? 1 : 2;
 
-// Текущий активный слайд
-let currentSlideIndex = 0;
-
-// Показ следующего слайда
-function showNextSlide() {
-    hideCurrentSlide();
-    currentSlideIndex++;
-    if (currentSlideIndex >= reviewsSlides.length) {
-        currentSlideIndex = 0;
+    function updateSlider() {
+        itemsToShow = window.innerWidth < 1150 ? 1 : 2;
+        const itemWidth = 100 / itemsToShow;
+        const translateX = -currentIndex * itemWidth;
+        slider.style.transform = `translateX(${translateX}%)`;
+        
+        // Блокируем кнопки в крайних положениях
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex >= items.length - itemsToShow;
     }
-    showNewSlide(currentSlideIndex);
-}
 
-// Показ предыдущего слайда
-function showPrevSlide() {
-    hideCurrentSlide();
-    currentSlideIndex--;
-    if (currentSlideIndex < 0) {
-        currentSlideIndex = reviewsSlides.length - 1;
-    }
-    showNewSlide(currentSlideIndex);
-}
+    prevBtn.addEventListener('click', function() {
+        if (currentIndex > 0) {
+            currentIndex -= itemsToShow;
+            updateSlider();
+        }
+    });
 
-// Скрытие текущего активного слайда
-function hideCurrentSlide() {
-    reviewsSlides[currentSlideIndex].classList.remove("reviews_info-active");
-}
+    nextBtn.addEventListener('click', function() {
+        if (currentIndex < items.length - itemsToShow) {
+            currentIndex += itemsToShow;
+            updateSlider();
+        }
+    });
 
-// Отображение нового слайда
-function showNewSlide(index) {
-    reviewsSlides[index].classList.add("reviews_info-active");
-}
+    window.addEventListener('resize', function() {
+        // При изменении размера сбрасываем позицию и обновляем количество отображаемых элементов
+        currentIndex = 0;
+        updateSlider();
+    });
+
+    // Инициализация
+    updateSlider();
+});
