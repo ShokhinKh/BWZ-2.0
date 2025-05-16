@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
     <title>main</title>
 </head>
+
 <body>
     <!------------
 ------------------------МЕНЮ------------------------
@@ -16,12 +18,12 @@
 
 
 
-<header class="header">
+    <header class="header">
         <div class="container">
             <div class="header-inner">
                 <div class="burger">
                     <span></span>
-                 </div>
+                </div>
                 <ul class="header-menu">
                     <a href="index.html" class="menu-link">Зоны коворкинга</a>
                     <a class="menu-link" href="index.html">бронирование</a>
@@ -30,15 +32,16 @@
                 </ul>
 
 
-<!--                 добавил выпадашку -->
-               <ul class="menu-ava">
+                <!--                 добавил выпадашку -->
+                <ul class="menu-ava">
                     <li><img src="image/Шохин.jpg" alt="" class="menu-ava-img"></a>
                         <ul class="vipadashka">
-                            <li class="vnutri-vipadashki"><a class="vipadashka-link1" href="perslAccaunt.html">Личный Кабинет</a></li>
+                            <li class="vnutri-vipadashki"><a class="vipadashka-link1" href="perslAccaunt.html">Личный
+                                    Кабинет</a></li>
                             <li class="vnutri-vipadashki"><a class="vipadashka-link2" href="#!">Выйти</a></li>
                         </ul>
                     </li>
-                
+
                 </ul>
 
 
@@ -52,15 +55,15 @@
                 <img class="pencil" id="edit" src="image/pencil.svg" alt="">
                 <div class="modal-edit" id="edit-modal">
                     <div class="modal-edit-item">
-                        
+
                         <form action="" class="reg_form">
 
-<!--                             поменять фото -->
+                            <!--                             поменять фото -->
                             <p class="reg_text">Фото профиля</p>
                             <button class="add-photo" id="modal-edit-close">
                                 Выбрать файл
                             </button>
-                            
+
                             <p class="reg_text">Фамилия</p>
                             <input type="text" class="reg_input" value="Хайитов" name="last_name" id="surname">
                             <p class="reg_text">Имя</p>
@@ -78,8 +81,8 @@
                             <p class="reg_text">Email</p>
                             <input type="email" class="reg_input" value="shokhin228@mail.com" name="email" id="email">
 
-<!--                             тут поменял айдишники -->
-                            <div class="password">
+                            <!--                             тут поменял айдишники -->
+                            <!-- <div class="password">
                                 <p class="reg_text">Старый пароль</p>
                                 <input type="password" class="reg_input" id="four-password">
                                 <button type="button" class="password_btn" data-target="#four-password">
@@ -92,9 +95,9 @@
                                 <button type="button" class="password_btn" data-target="#five-password">
                                     <img src="image/eye.png" alt="" class="eye">
                                 </button>
-                            </div>
+                            </div> -->
+                            <div></div>
 
-                            
                             <button class="modal-edit-btn" id="modal-edit-close">
                                 Редактировать
                             </button>
@@ -112,7 +115,8 @@
                             <div class="booked-zone-item">
                                 <div class="booked-zone-item-title">Зал “групповых работ”</div>
                                 <div class="booked-zone-info">
-                                    <div class="booked-zone-date"><span class="date">27.08.2024</span> В <span class="time">15:00</span></div>
+                                    <div class="booked-zone-date"><span class="date">27.08.2024</span> В <span
+                                            class="time">15:00</span></div>
                                     <div class="booked-zone-cancel">
                                         <a class="booked-zone-cancel-link" href="#">Отменить</a>
                                     </div>
@@ -121,7 +125,7 @@
                                 <div class="modals-book">
                                     <div class="pa-modal-overlay">
                                         <div class="pa-modal-add" style="border: rgb(90, 90, 90) 3px solid;">
-                                            <div class="pa-modal-add-title" >
+                                            <div class="pa-modal-add-title">
                                                 Внимание!
                                             </div>
                                             <p class="pa-modal-add-text">Вы точно хотите отменить бронирование?</p>
@@ -139,9 +143,13 @@
                         </div>
                     </div>
                     <div class="personal-info-item">
-                        <div class="personal-name">Хайитов Шохин</div>
-                        <div class="personal-rank">Студент</div>
-                        <div class="count-booking">Общее количество бронирований : <span class="count-booking-count">57</span></div>
+                        <div class="personal">
+                            <div class="personal-name">Хайитов Шохин</div>
+                            <div class="personal-rank">Студент</div>
+                            <div class="count-booking">Общее количество бронирований : <span
+                                    class="count-booking-count">57</span></div>
+                        </div>
+
                         <div class="personal-info-item-title">Личная информация</div>
                         <div class="personal-data">
                             <div class="personal-data-static">
@@ -156,56 +164,62 @@
                                 <div class="data-text person-name">Шохин</div>
                                 <div class="data-text person-patronymic">Дилшодович</div>
                                 <div class="data-text person-number">+7 922 252 93 65</div>
-                                <div class="data-text person-mail">shokhin228@mail.com</div> 
-                                <a class="password-edit-btn" id="modal-edit-open">
-                                    Сменить пароль
-                                </a>
-                                <div class="modal-book-password" id="form-modal-password">
-                                <div class="modal-item-password">
-                                    <form action="">
-
-                                        <div class="password">
-                                            <p class="reg_text">Старый пароль</p>
-                                            <input type="password" class="reg_input" id="four-password">
-                                            <button type="button" class="password_btn" data-target="#four-password">
-                                                <img src="image/eye.png" alt="" class="eye">
-                                            </button>
-                                        </div>
-                                        <div class="password">
-                                            <p class="reg_text">Новый пароль</p>
-                                            <input type="password" class="reg_input" id="fife-password">
-                                            <button type="button" class="password_btn" data-target="#fife-password">
-                                                <img src="image/eye.png" alt="" class="eye">
-                                            </button>
-                                        </div>
-                                        <div class="password">
-                                            <p class="reg_text">Повторите новый пароль</p>
-                                            <input type="password" class="reg_input" id="fife-password">
-                                            <button type="button" class="password_btn" data-target="#fife-password">
-                                                <img src="image/eye.png" alt="" class="eye">
-                                            </button>
-                                        </div>
-            
-                                        <button class="modal-password-btn" id="modal-password-close">
-                                            сменить
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
+                                <div class="data-text person-mail">shokhin228@mail.com</div>
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <div class="edit_btns">
+                    <a class="password-edit-btn" id="modal-edit-open">
+                        Сменить пароль
+                    </a>
+                    <a class="password-edit-btn">
+                        Выйти
+                    </a>
+                </div>
+                <div class="modal-book-password" id="form-modal-password">
+                    <div class="modal-item-password">
+                        <form action="">
+                            <div class="password">
+                                <p class="reg_text">Старый пароль</p>
+                                <input type="password" class="reg_input" id="four-password">
+                                <button type="button" class="password_btn" data-target="#four-password">
+                                    <img src="image/eye.png" alt="" class="eye">
+                                </button>
+                            </div>
+                            <div class="password">
+                                <p class="reg_text">Новый пароль</p>
+                                <input type="password" class="reg_input" id="fife-password">
+                                <button type="button" class="password_btn" data-target="#fife-password">
+                                    <img src="image/eye.png" alt="" class="eye">
+                                </button>
+                            </div>
+                            <div class="password">
+                                <p class="reg_text">Повторите новый пароль</p>
+                                <input type="password" class="reg_input" id="fife-password">
+                                <button type="button" class="password_btn" data-target="#fife-password">
+                                    <img src="image/eye.png" alt="" class="eye">
+                                </button>
+                            </div>
+    
+                            <button class="modal-password-btn" id="modal-password-close">
+                                сменить
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
+
+        </div>
         </div>
     </section>
-<script src="JavaScript/burger.js"></script>
-<script src="JavaScript/modal-edit.js"></script>
-<script src="JavaScript/lk.js"></script>
+    <script src="JavaScript/burger.js"></script>
+    <script src="JavaScript/modal-edit.js"></script>
+    <script src="JavaScript/lk.js"></script>
 
-<!--     Вот тут изменение  -->
-<script src="JavaScript/eye.js"></script>
-<script src="JavaScript/vipadashka.js"></script>
+    <!--     Вот тут изменение  -->
+    <script src="JavaScript/eye.js"></script>
+    <script src="JavaScript/vipadashka.js"></script>
 </body>
+
 </html>
