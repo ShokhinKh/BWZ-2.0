@@ -852,15 +852,67 @@ ___________________________________*/
 }
 
 
-
-.reviews_info{
-  justify-content: space-between;
-  position: relative;
-  display: none;
+.reviews-inner {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 35px 0 20px 0;
 }
 
-.reviews_info-active{
-  display: flex;
+.reviews_info {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.reviews_item {
+    flex: 0 0 48%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #2D60DF;
+    border-radius: 20px;
+    margin: 10px;
+    color: white;
+}
+
+.reviews-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.reviews-arrow {
+    background: #F5AE25;
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.reviews-arrow:hover {
+    background: #e69c1a;
+    transform: scale(1.1);
+}
+
+
+/* Мобильная версия */
+@media (max-width: 1149px) {
+    .reviews_item {
+        flex: 0 0 100%;
+         margin: 0;
+    }
+    
+    .reviews-navigation {
+        margin-top: 15px;
+    }
 }
 
 .reviews_title{
@@ -872,17 +924,6 @@ ___________________________________*/
   margin-left: 590px;
 }
 
-.reviews_item{
-  margin-top: 95px;
-  background-color: #2D60DF;
-  max-width: 429px;
-  max-height: 211px;
-  padding: 33px 34px;
-  color: #fff;
-  border-radius: 20px;
-  position: relative;
-}
-
 .reviews_name{
   text-transform: uppercase;
   font-size: 20px;
@@ -892,20 +933,20 @@ ___________________________________*/
 
 
 .ava {
-  width: 140px;
-  height: 140px;
+  position: absolute;
+  width: 110px;
+  height: 110px;
   border: 2px #F5AE25 solid;
   border-radius: 50%;
   box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
-  position: absolute;
-  top: -70px;
+  top:  -35px;
   right: 40px;
   transition: all 0.2s linear;
 }
 
 .ava:hover{
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
 
 .reviews_btn{
@@ -949,19 +990,6 @@ ___________________________________*/
   color: #F5AE25;
 }
 
-.reviews-inner{
-  position: relative;
-}
-
-.reviews-slider_btn{
-  position: absolute;
-  display: flex;
-  gap: 20px;
-  top: 20px;
-  left: 46.5%;
-  right: 52.5%;
-}
-
 .modals_rewies{
   transition: all 0.3s ease;
   display: none;
@@ -969,17 +997,6 @@ ___________________________________*/
 
 .modals_rewies-visible{
   display: block;
-}
-
-.slider_btn_img {
-  width: 32px;
-  height: 32px;
-  transition: all 0.2s ease;
-}
-
-.slider_btn_img:hover{
-  width: 38px;
-  height: 38px;
 }
 
 .modal-overlay{
@@ -1364,7 +1381,6 @@ ___________________________________*/
 }
 
 .personal-info-item:first-child {
-  margin: 0 auto;
   margin-top: 30px;
   text-align: center;
 }
@@ -1493,6 +1509,7 @@ ___________________________________*/
 .modals-book-visible{
   display: block;
 }
+
 
 .personal-info-item:last-child{
   margin-left: 100px;
@@ -1632,15 +1649,34 @@ ___________________________________*/
   color: #000000;
 }
 
+.edit_btns {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+
 .password-edit-btn{
-  display: block;
   margin-top: 20px;
-  border: none;
+  border: 1px solid #F5AE25;
+  border-radius: 20px;
   text-decoration: none;
-  color: #000000;
+  color: #fff;
+  background-color: #F5AE25;
+  padding: 15px 20px;
   cursor: pointer;
-  font-size: 14px;
-  text-transform: uppercase;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+
+.password-edit-btn:first-child {
+  border: 1px solid #2D60DF;
+  background-color: #2D60DF;
+}
+.password-edit-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .modal-book-password.open_modal{
@@ -1821,6 +1857,7 @@ ___________________________________*/
 
 
 @media (max-width: 1158px) {
+
   .intro_title{
     font-size: 64px;
   }
@@ -1867,11 +1904,6 @@ ___________________________________*/
   background: none;
 }
 
-.reviews_info {
-  margin: 20px;
-  gap: 20px;
-}
-
 .reviews-slider_btn {
   position: relative;
   display: flex;
@@ -1881,7 +1913,9 @@ ___________________________________*/
   right: 52.5%;
   width: 100px;
 }
-
+.reviews-inner {
+  padding-top: 60px;
+}
 .slider_btn_img:hover{
   width: 32px;
   height: 32px;
@@ -1929,7 +1963,7 @@ ___________________________________*/
     position: absolute;
     height: 30%;
     width: 100%;
-    top: 50px; 
+    top: 65px; 
     bottom: 0; 
     left: -20px; 
     right: 0;
@@ -1995,13 +2029,9 @@ ___________________________________*/
   margin-right: 20px;
 }
 
-.reviews-inner{
-  position: relative;
-}
-
-.reviews_info {
+/* .reviews_info {
   position: absolute;
-}
+} */
 
 .reviews-slider_btn{
   padding-top: 350px;
@@ -2031,6 +2061,13 @@ ___________________________________*/
 }
 
 @media (max-width: 850px) {
+
+  .personal{
+    top: 330px;
+    position: absolute;
+    left: 50%;
+    margin-left: -163px;
+  }
   .personal-info-inner {
     display: flex;
     flex-direction: column;
@@ -2045,18 +2082,22 @@ ___________________________________*/
   margin-top: 0;
 }
 
+.personal-ava{
+  margin: 0 auto;
+}
+
+.personal-ava-image{
+  display: block;
+  margin: 0 auto;
+}
+
 .personal-data{
   justify-content: space-between;
   text-align: left;
 }
 
 .booked-zone {
-  position: absolute;
-  bottom: -120px;
-  left: 60px;
-  right: 60px;
-  max-width: 800px;
-  padding-bottom: 60px;
+  margin-top: 200px;
 }
 
 .personal-name{
@@ -2067,7 +2108,24 @@ ___________________________________*/
   text-align: center;
 }
 
+.count-booking {
+  margin-top: 30px;
+}
+.booked-zone-item-title{
+  font-size: 14px;
+  align-items: center;
+}
+.booked-zone-info   {
+  font-size: 12px;
+}
 
+.booked-zone-date {
+  color: #4b4b4b;
+}
+
+.booked-zone-cancel-link{
+  font-size: 10px;
+}
 
 }
 
@@ -2222,28 +2280,11 @@ ___________________________________*/
   width: 470px;
   height: 300px;
 }
-.reviews_info {
-  flex-direction: column;
-}
 
 .reviews-slider_btn{
   width: 120px;
 }
 
-.reviews_item {
-  margin-top: 95px;
-  background-color: #2D60DF;
-  max-width: 100%;
-  max-height: 211px;
-  padding: 33px 34px;
-  color: #fff;
-  border-radius: 20px;
-  position: relative;
-}
-
-.reviews_item:last-child{
-  display: none;
-}
 
 .reviews-slider_btn {
   padding-top: 320px;
@@ -2341,12 +2382,38 @@ ___________________________________*/
   left: 30px;
 }
 
-.reviews_btn {
-  padding-top: 350px;
+.edit_btns {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
+
+.password-edit-btn {
+  width: 100%;
+  text-align: center;
+}
+
 
 }
 @media (max-width: 500px) {
+
+.personal-ava-image{
+  height: 160px;
+  width: 160px;
+}
+
+.personal {
+  top: 270px;
+}
+
+  .personal-info {
+    background-color: #fff;
+    padding: 0px 20px;
+    position: relative;
+    height: 100vh;
+    border-radius: 30px 30px 0px 0px;
+}
   .intro_title{
     font-size: 50px;
     margin-left: 30px;
@@ -2463,17 +2530,8 @@ ___________________________________*/
   top: 20px;
 }
 
-.personal-name {
-  font-size: 16px;
-  font-weight: 450;
-  margin-bottom: 4px;
-}
 
 .personal-rank {
-  font-size: 12px;
-}
-
-.count-booking {
   font-size: 12px;
 }
 
@@ -2534,7 +2592,7 @@ ___________________________________*/
 }
 
 .reviews_btn {
-  padding-top: 350px;
+  margin-top: 20px;
 }
 
 
