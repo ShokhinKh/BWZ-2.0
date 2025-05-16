@@ -32,21 +32,21 @@
     
     
                 <!-- Если пользователь не зареган -->
-                <div class="menu-btn">
+                <!-- <div class="menu-btn">
                     <a href="registration.html" class="menu-reg">Регистрация</a>
                     <a href="login.html" class="menu-login">вход</a>
-                </div>
+                </div> -->
     
 
                 <!-- Если зареган я тут тоже поменял-->
-<!--                 <ul class="menu-ava menu-index">
+                <ul class="menu-ava menu-index">
                     <li><img src="image/Шохин.jpg" alt="" class="menu-ava-img"></a>
                         <ul class="vipadashka">
                             <li class="vnutri-vipadashki"><a class="vipadashka-link1" href="perslAccaunt.html">Личный Кабинет</a></li>
                             <li class="vnutri-vipadashki"><a class="vipadashka-link2" href="#!">Выйти</a></li>
                         </ul>
                     </li>
-                </ul> -->
+                </ul>
 
 
             </div>
@@ -345,7 +345,7 @@
                     <div class="title-block reviews_title _anim-items _anim-no-hide">Посетители <br><span class="reviews_title_2">о нас</span></div>
                     <div class="reviews-inner">
     
-                        <div class="reviews_info reviews_info-active">
+                        <div class="reviews_info" id="reviews_info">
                             <div class="reviews_item">
                                 <p class="zap1">,,</p>
                                 <img src="image/Шохин.jpg" alt="" class="ava">
@@ -360,8 +360,6 @@
                                 <div class="reviews_text">Я в восторге от зоны коворкинга! Удобное расположение, отличная атмосфера, идеальные условия для работы. Рекомендую всем!</div>
                                 <p class="zap2">,,</p>
                             </div>
-                        </div>
-                        <div class="reviews_info">
                             <div class="reviews_item">
                                 <p class="zap1">,,</p>
                                 <img src="image/Марк.jpg" alt="" class="ava">
@@ -377,19 +375,9 @@
                                 <p class="zap2">,,</p>
                             </div>
                         </div>
-                        
-                        
-                        <div class="reviews-slider_btn">
-                            <div class="reviews-slider_btn_item">
-                                <a href="#!" class="slider_btn" onclick="showPrevSlide()">
-                                    <img class="slider_btn_img" src="image/left.svg" alt="">
-                                </a>
-                            </div>
-                            <div class="reviews-slider_btn_item">
-                                <a href="#!" class="slider_btn" onclick="showNextSlide()">
-                                    <img class="slider_btn_img" src="image/right.svg" alt="">
-                                </a>
-                            </div>
+                        <div class="reviews-navigation">
+                            <button class="reviews-arrow reviews-prev">&lt;</button>
+                            <button class="reviews-arrow reviews-next">&gt;</button>
                         </div>
                     </div>
     
